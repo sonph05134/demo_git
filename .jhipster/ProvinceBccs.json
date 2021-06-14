@@ -1,0 +1,41 @@
+{
+  "name": "ProvinceBccs",
+  "fields": [
+    {
+      "fieldName": "provinceBccsId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "provinceBccsName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "provinceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "bccsStaffCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userUpdated",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateUpdated",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201229014114",
+  "entityTableName": "province_bccs",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

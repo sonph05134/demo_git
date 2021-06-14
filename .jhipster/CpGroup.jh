@@ -1,0 +1,17 @@
+entity CpGroup{
+id Long
+cpId Long
+cpCode String
+cpGroupName String
+note String
+createDate Instant
+updateDate Instant
+deleted Integer
+createUser String
+}
+dto CpGroup with mapstruct
+paginate CpGroup with pagination
+
+service CpGroup with serviceClass
+service CpGroup with serviceImpl
+

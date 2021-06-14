@@ -1,0 +1,149 @@
+{
+  "name": "Mt",
+  "fields": [
+    {
+      "fieldName": "mtId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "sender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "receiver",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mtTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "msgType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "msgLen",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numMt",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "mtType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "sumStatus",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "requestId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "webservice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aliasId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "aliasGroupType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "telcoId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "progId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "aliasType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "subType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "inputRequestId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "regDlr",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "inputModule",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dlrStatus",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpMtId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "refund",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "smscLog",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "smscLogQuannd8",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "quannd8Check",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "promotionAliasId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "undoPromotion",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201225065719",
+  "entityTableName": "mt",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

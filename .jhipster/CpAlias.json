@@ -1,0 +1,181 @@
+{
+  "name": "CpAlias",
+  "fields": [
+    {
+      "fieldName": "cpAliasId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpAlias",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "groupType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "telco",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "webservice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "webserviceBackup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aliasType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "optionalKeepFee",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "keepFee",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "lastChargeTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastChargeStatus",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "processId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "processTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "accUpdate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkDuplicate",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "inactiveDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "attachFile",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timeRepeat",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "checkBlockSpam",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "acceptParentcpSend",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "filePathCreate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "filePathCancel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accCreate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "monthKeepFee",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "numberSmsCheckSpam",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpAliasTmpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "taxCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyNameRoman",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ussdEnabled",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "companyAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "businessRegistration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyPhoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyFaxNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyEmail",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201230161136",
+  "entityTableName": "cp_alias",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

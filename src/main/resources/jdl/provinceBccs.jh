@@ -1,0 +1,13 @@
+entity ProvinceBccs {
+      provinceBccsId   Long,
+      provinceBccsName String,
+      provinceId        Long,
+      bccsStaffCode    String,
+      userUpdated       String,
+      dateUpdated       Instant,
+      id                 Long
+}
+dto ProvinceBccs with mapstruct
+paginate ProvinceBccs with pagination
+service ProvinceBccs with serviceClass
+service ProvinceBccs with serviceImpl

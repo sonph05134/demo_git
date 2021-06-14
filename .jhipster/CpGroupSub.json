@@ -1,0 +1,65 @@
+{
+  "name": "CpGroupSub",
+  "fields": [
+    {
+      "fieldName": "birthday",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpGroupId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sex",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "createDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "msisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201228072014",
+  "entityTableName": "cp_group_sub",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

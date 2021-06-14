@@ -1,0 +1,169 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+logging:
+  level:
+    ROOT: DEBUG
+    io.github.jhipster: DEBUG
+    com.viettel.smsbrandname: INFO
+  file:
+    name: ../logs/smsbrandname.log
+    max-history: 30
+management:
+  health:
+    elasticsearch:
+      enabled: false
+
+spring:
+  profiles:
+    active: dev
+    include:
+      - swagger
+      # Uncomment to activate TLS for the dev profile
+      #- tls
+  devtools:
+    restart:
+      enabled: true
+      additional-exclude: static/**
+    livereload:
+      enabled: false # we use Webpack dev server + BrowserSync for livereload
+  jackson:
+    serialization:
+      indent-output: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@10.60.157.12:1521:db12c
+    username: SMSBRAND_PT
+    password: SMSBRAND_PT#123
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  jpa:
+    show-sql: true
+  liquibase:
+    # Remove 'faker' if you do not want the sample data to be loaded automatically
+    contexts: prod
+    enabled: false
+  mail:
+    host: localhost
+    port: 25
+    username:
+    password:
+  messages:
+    cache-duration: PT1S # 1 second, see the ISO 8601 standard
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8989
+  pathOutput: ../output/
+  pathTemplate: ../templates/
+
+# ===================================================================
+# JHipster specific properties
+#
+# Full reference is available at: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+jhipster:
+  cache: # Cache configuration
+    ehcache: # Ehcache configuration
+      time-to-live-seconds: 3600 # By default objects stay 1 hour in the cache
+      max-entries: 100 # Number of objects in each cache entry
+  # CORS is only enabled by default with the "dev" profile, so BrowserSync can access the API
+  cors:
+    allowed-origins: '*'
+    allowed-methods: '*'
+    allowed-headers: '*'
+    exposed-headers: 'Authorization,Link,X-Total-Count,filename,result,message'
+    allow-credentials: true
+    max-age: 1800
+  mail: # specific JHipster mail property, for standard properties see MailProperties
+    base-url: http://127.0.0.1:8080
+  metrics:
+    logs: # Reports metrics in the logs
+      enabled: false
+      report-frequency: 60 # in seconds
+  logging:
+    use-json-format: false # By default, logs are not in Json format
+    logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
+      enabled: false
+      host: localhost
+      port: 5000
+      queue-size: 512
+  audit-events:
+    retention-period: 30 # Number of days before audit events are deleted.
+
+folder-dir:
+  upload-dir: '../cp_files'
+  cp-attach-dir: '../cp/attach'
+  attachFileDir: '../alias_files'
+pre_fix: '(QC-VTL2) '
+suf_fix: ' De tu choi, soan TC gui 1313.'
+bccs:
+  bccs_user: '2e4fcccea36cf4d4'
+  bccs_pass: '2e4fcccea36cf4d4'
+  bccs_user_ams: '2e4fcccea36cf4d4'
+  bccs_pass_ams: '2e4fcccea36cf4d4'
+  bccs_im_user: '8434ef9312bc1486'
+  bccs_im_pass: '8434ef9312bc1486'
+  bccs_newApi_user: '2e4fcccea36cf4d6'
+  bccs_newApi_pass: '2e4fcccea36cf4d6'
+  bccs_findProject_username: 'f1f449bbe29ad60f'
+  bccs_findProject_password: 'f1f449bbe29ad60f'
+  bccs_url: 'http://10.58.71.135:8004/SALE_SERVICE/direct/wsim'
+  bccs_url_ExternalServiceForSale: 'http://10.58.71.187:8100/PRODUCT_SERVICE/bpm/product/ExternalServiceForSale?wsdl'
+  bccs_url_ExternalSaleService: 'http://10.1.8.6:8701/SALE_SERVICE/bpm/sale/ExternalSaleService?wsdl'
+  bccs_findProject_usernameToken: 'UsernameToken-32ce50e8-4a5d-4040-af71-c3428d92daa7'
+charging:
+  username: '07809207b286da33'
+  password: '6e01cd76aa628e89a8ec66b1958a9494'
+  url: 'http://10.60.156.71:8334/bulkcharging/Service.asmx?wsdl'
+keycloak:
+  realm: 'sms_brandname'
+  auth-server-url: 'http://10.60.158.41:8080/auth'
+  resource: 'sms_brandname'
+  credentials:
+    secret: 'f581ee0d-f7e8-4f7c-890f-fdd2f0951bcc'
+user-keycloak:
+  username: 'admin'
+  password: 'admin'
+
+emailConf:
+  techEmail: 'techsbr@viettel.com.vn'
+  mail-smtp-host: '1.1.1.1'
+  mail-smtp-socketFactory-port: 465
+  mail-smtp-socketFactory-class: 'javax.net.ssl.SSLSocketFactory'
+  mail-smtp-auth: 'true'
+  mail-smtp-port: 465
+  mail-smtp-user: 'abc@viettel.com.vn'
+  mail-smtp-password: '123456'
+  #  mail.smtp.port: 587
+  mail-smtp-socketFactory-fallback: false
+  mail-smtp-starttls-enable: true
+  adminEmail: 'sbr@viettel.com.vn'
+# ===================================================================
+# Application specific properties
+# Add your own application properties here, see the ApplicationProperties class
+# to have type-safe configuration, like in the JHipsterProperties above
+#
+# More documentation is available at:
+# https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# application:

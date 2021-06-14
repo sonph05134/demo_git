@@ -1,0 +1,52 @@
+entity Orders
+{
+    id                Long,
+    partnerId        String,
+    transId          String,
+    provider         String,
+    serviceName     String,
+    errorCode        String,
+    errorMessage     String,
+    time              Instant,
+    chargeResult     Long,
+    balanceType      Long,
+    orderCode       String,
+    orderType        Long ,
+    cpId             Long,
+    amount            Long,
+    contactName      String,
+    contactPhone     String,
+    discountPercent  Long,
+    paymentValue     Long,
+    fileUrl          String,
+    fileName         String,
+    note              String,
+    approveUser     String,
+    approveTime      Instant,
+    approveNote      String,
+    chargeUser      String,
+    chargeTime       Instant,
+    chargeNote       String,
+    bccsSaleId      String,
+    contactEmail     String,
+    adminFileUrl    String,
+    adminFileName   String,
+    deleted           Long,
+    financeFileUrl      String,
+    financeFileName     String,
+    bccsBranchId        Long,
+    chargeFail          Long,
+    approveBccsFail     Long,
+    bccsResponse     String,
+    paymentStatus    String,
+    bccsStaffCode    String,
+    cpCode           String,
+    exchangeRate      Long ,
+    vat               Long
+}
+dto Order with mapstruct
+
+paginate Order with pagination
+
+service Order with serviceClass
+service Order with serviceImpl

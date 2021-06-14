@@ -1,0 +1,21 @@
+entity CpGroupSub{
+id Long
+birthday Instant
+name String
+cpId Long
+updateDate Instant
+address String
+note String
+cpGroupId Long
+cpCode String
+sex Long
+createDate Instant
+msisdn String
+code String
+}
+dto CpGroupSub with mapstruct
+paginate CpGroupSub with pagination
+
+service CpGroupSub with serviceClass
+service CpGroupSub with serviceImpl
+

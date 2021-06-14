@@ -1,0 +1,10 @@
+entity AdPackage {
+	id Long,
+    packageName String,
+    type Integer,
+    status Integer
+}
+dto AdPackage with mapstruct
+paginate AdPackage with pagination
+service AdPackage with serviceClass
+service AdPackage with serviceImpl

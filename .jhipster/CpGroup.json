@@ -1,0 +1,49 @@
+{
+  "name": "CpGroup",
+  "fields": [
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpGroupName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deleted",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createUser",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201226022355",
+  "entityTableName": "cp_group",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,9 @@
+entity AdJob {
+	id Long,
+    jobName String,
+    status Integer
+}
+dto AdJob with mapstruct
+paginate AdJob with pagination
+service AdJob with serviceClass
+service AdJob with serviceImpl

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity Mt.
+    -->
+    <changeSet id="20201225065719-1" author="jhipster">
+        <createTable tableName="mt">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="mt_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="sender" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="receiver" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mt_time" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="msg_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="msg_len" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="status" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="message" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cp_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="cp_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="num_mt" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="mt_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="sum_status" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="request_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="webservice" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="alias_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="alias_group_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="telco_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="prog_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="alias_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="sub_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="price" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="input_request_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="reg_dlr" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="input_module" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dlr_status" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="cp_mt_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="refund" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="smsc_log" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="smsc_log_quannd_8" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="quannd_8_check" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="promotion_alias_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="undo_promotion" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="mt" columnName="mt_time" columnDataType="datetime"/>
+    </changeSet>
+
+    <changeSet id="20201225065719-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20201225065719-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/mt.csv"
+                  separator=";"
+                  tableName="mt">
+            <column name="id" type="numeric"/>
+            <column name="mt_id" type="numeric"/>
+            <column name="sender" type="string"/>
+            <column name="receiver" type="string"/>
+            <column name="mt_time" type="datetime"/>
+            <column name="msg_type" type="numeric"/>
+            <column name="msg_len" type="numeric"/>
+            <column name="status" type="numeric"/>
+            <column name="message" type="string"/>
+            <column name="cp_id" type="numeric"/>
+            <column name="cp_code" type="string"/>
+            <column name="num_mt" type="numeric"/>
+            <column name="mt_type" type="numeric"/>
+            <column name="sum_status" type="numeric"/>
+            <column name="request_id" type="numeric"/>
+            <column name="webservice" type="string"/>
+            <column name="alias_id" type="numeric"/>
+            <column name="alias_group_type" type="numeric"/>
+            <column name="telco_id" type="numeric"/>
+            <column name="prog_id" type="numeric"/>
+            <column name="alias_type" type="numeric"/>
+            <column name="sub_type" type="numeric"/>
+            <column name="price" type="numeric"/>
+            <column name="input_request_id" type="numeric"/>
+            <column name="reg_dlr" type="numeric"/>
+            <column name="input_module" type="string"/>
+            <column name="dlr_status" type="numeric"/>
+            <column name="cp_mt_id" type="string"/>
+            <column name="refund" type="numeric"/>
+            <column name="smsc_log" type="numeric"/>
+            <column name="smsc_log_quannd_8" type="numeric"/>
+            <column name="quannd_8_check" type="numeric"/>
+            <column name="promotion_alias_id" type="numeric"/>
+            <column name="undo_promotion" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

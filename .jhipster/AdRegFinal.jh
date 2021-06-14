@@ -1,0 +1,9 @@
+entity AdRegFinal {
+	id Long,
+    msisdn String,
+    insertTime Instant
+}
+dto AdRegFinal with mapstruct
+paginate AdRegFinal with pagination
+service AdRegFinal with serviceClass
+service AdRegFinal with serviceImpl

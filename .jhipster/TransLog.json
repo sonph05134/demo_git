@@ -1,0 +1,61 @@
+{
+  "name": "TransLog",
+  "fields": [
+    {
+      "fieldName": "transId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "transTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "chanel",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "transNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alias",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "process",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "balanceType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "balanceBefore",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "balanceAfter",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201226152801",
+  "entityTableName": "trans_log",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,16 @@
+entity ConfigAlarmLevel {
+	id Long,
+    levelCode String,
+    levelName String,
+    colorCode String,
+    description String,
+    createdBy String,
+    createdDate Instant,
+    lastModifiedBy String,
+    lastModifiedDate Instant,
+    status Long
+}
+dto ConfigAlarmLevel with mapstruct
+paginate ConfigAlarmLevel with pagination
+service ConfigAlarmLevel with serviceClass
+service ConfigAlarmLevel with serviceImpl

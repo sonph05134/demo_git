@@ -1,0 +1,11 @@
+entity AdminMsisdn {
+	id Long,
+    userName String,
+    msisdn String,
+    insertTime Instant,
+    status Integer
+}
+dto AdminMsisdn with mapstruct
+paginate AdminMsisdn with pagination
+service AdminMsisdn with serviceClass
+service AdminMsisdn with serviceImpl

@@ -1,0 +1,17 @@
+entity CpUsers {
+     id Long
+     userName String
+     cpId Long
+     status Long
+     type Long
+     userCreated String
+     dateCreated Instant
+	 userUpdated String
+     dateUpdated Instant
+}
+dto CpUsers with mapstruct
+
+paginate CpUsers with pagination
+
+service CpUsers with serviceClass
+service CpUsers with serviceImpl

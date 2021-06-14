@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity Order.
+    -->
+    <changeSet id="20201226031929-1" author="jhipster">
+        <createTable tableName="jhi_order">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="partner_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trans_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="provider" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="service_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="error_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="error_message" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="jhi_time" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="charge_result" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="balance_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_type" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="cp_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="amount" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_phone" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="discount_percent" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_value" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="file_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="file_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="note" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="approve_user" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="approve_time" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="approve_note" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="charge_user" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="charge_time" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="charge_note" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bccs_sale_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="contact_email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="admin_file_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="admin_file_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="deleted" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="finance_file_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="finance_file_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bccs_branch_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="charge_fail" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="approve_bccs_fail" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="bccs_response" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="payment_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bccs_staff_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cp_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="exchange_rate" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="vat" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="jhi_order" columnName="jhi_time" columnDataType="datetime"/>
+        <dropDefaultValue tableName="jhi_order" columnName="approve_time" columnDataType="datetime"/>
+        <dropDefaultValue tableName="jhi_order" columnName="charge_time" columnDataType="datetime"/>
+    </changeSet>
+
+    <changeSet id="20201226031929-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20201226031929-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/jhi_order.csv"
+                  separator=";"
+                  tableName="jhi_order">
+            <column name="id" type="numeric"/>
+            <column name="partner_id" type="string"/>
+            <column name="trans_id" type="string"/>
+            <column name="provider" type="string"/>
+            <column name="service_name" type="string"/>
+            <column name="error_code" type="string"/>
+            <column name="error_message" type="string"/>
+            <column name="jhi_time" type="datetime"/>
+            <column name="charge_result" type="numeric"/>
+            <column name="balance_type" type="numeric"/>
+            <column name="order_code" type="string"/>
+            <column name="order_type" type="numeric"/>
+            <column name="cp_id" type="numeric"/>
+            <column name="amount" type="numeric"/>
+            <column name="contact_name" type="string"/>
+            <column name="contact_phone" type="string"/>
+            <column name="discount_percent" type="numeric"/>
+            <column name="payment_value" type="numeric"/>
+            <column name="file_url" type="string"/>
+            <column name="file_name" type="string"/>
+            <column name="note" type="string"/>
+            <column name="approve_user" type="string"/>
+            <column name="approve_time" type="datetime"/>
+            <column name="approve_note" type="string"/>
+            <column name="charge_user" type="string"/>
+            <column name="charge_time" type="datetime"/>
+            <column name="charge_note" type="string"/>
+            <column name="bccs_sale_id" type="string"/>
+            <column name="contact_email" type="string"/>
+            <column name="admin_file_url" type="string"/>
+            <column name="admin_file_name" type="string"/>
+            <column name="deleted" type="numeric"/>
+            <column name="finance_file_url" type="string"/>
+            <column name="finance_file_name" type="string"/>
+            <column name="bccs_branch_id" type="numeric"/>
+            <column name="charge_fail" type="numeric"/>
+            <column name="approve_bccs_fail" type="numeric"/>
+            <column name="bccs_response" type="string"/>
+            <column name="payment_status" type="string"/>
+            <column name="bccs_staff_code" type="string"/>
+            <column name="cp_code" type="string"/>
+            <column name="exchange_rate" type="numeric"/>
+            <column name="vat" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

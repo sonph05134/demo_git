@@ -1,0 +1,29 @@
+{
+  "name": "AdPackage",
+  "fields": [
+    {
+      "fieldName": "packageName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210105095035",
+  "entityTableName": "ad_package",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

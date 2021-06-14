@@ -1,0 +1,11 @@
+entity AdCategory {
+	id Long,
+    catCode String,
+    catName String,
+    catDesc String,
+    recycle Integer
+}
+dto AdCategory with mapstruct
+paginate AdCategory with pagination
+service AdCategory with serviceClass
+service AdCategory with serviceImpl

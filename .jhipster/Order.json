@@ -1,0 +1,185 @@
+{
+  "name": "Order",
+  "fields": [
+    {
+      "fieldName": "partnerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "provider",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "errorCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "errorMessage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "chargeResult",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "balanceType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "orderCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "contactName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPercent",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentValue",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "fileUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "approveUser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "approveTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "approveNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chargeUser",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chargeTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "chargeNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bccsSaleId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminFileUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminFileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deleted",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "financeFileUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "financeFileName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bccsBranchId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "chargeFail",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "approveBccsFail",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "bccsResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bccsStaffCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "exchangeRate",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "vat",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201226031929",
+  "entityTableName": "order",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

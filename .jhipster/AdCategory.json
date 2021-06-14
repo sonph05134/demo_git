@@ -1,0 +1,33 @@
+{
+  "name": "AdCategory",
+  "fields": [
+    {
+      "fieldName": "catCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "catName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "catDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recycle",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210105072451",
+  "entityTableName": "ad_category",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

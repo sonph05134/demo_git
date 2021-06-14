@@ -1,0 +1,57 @@
+{
+  "name": "Telco",
+  "fields": [
+    {
+      "fieldName": "telcoId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "telcoName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telcoCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telcoPrefix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isViettelGroup",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "prefixDetail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "groupName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "canFreeSms",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "isVietnamese",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201226150907",
+  "entityTableName": "telco",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

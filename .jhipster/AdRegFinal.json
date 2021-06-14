@@ -1,0 +1,25 @@
+{
+  "name": "AdRegFinal",
+  "fields": [
+    {
+      "fieldName": "msisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insertTime",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210106075600",
+  "entityTableName": "ad_reg_final",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
